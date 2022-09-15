@@ -1,0 +1,54 @@
+// Criar arquivo XML 
+SharedPreferences seuAplicativo_pref = 
+getApplicationContext().getSharedPreferences("seuAplicativo_pref", 0); 
+Editor dados = seuAplicativo_pref();
+
+// Salvar dados
+dados.putBoolean("key_name", true); // true/false
+dados.putString("key_name", "string value"); // String
+dados.putInt("key_name", "int value"); // Números integer
+dados.putFloat("key_name", "float value"); // Números float
+dados.putLong("key_name", "long value"); // Números long
+
+// Salvar os dados
+editor.commit(); // Versões anteriores
+editor.apply(); // recomendado
+
+// Recuperar os dados
+dados.getString("key_name", "string"); // getting String
+dados.getInt("key_name", -1); // getting Integer
+dados.getFloat("key_name", 1.0f); // getting Float
+dados.getLong("key_name", 1.0l); // getting Long
+dados.getBoolean("key_name", true); // getting boolean
+
+// Remover dados
+remove("key_name";
+
+dados.remove("key_name"); 
+editor.apply(); // recomendado
+
+// limpar todos os dados
+clear()
+
+dados.clear();
+editor.apply(); // recomendado
+
+// Implementação
+SharedPreferences sharedpreferences;
+
+public static final String mypreference = "seuAplicativo_pref";
+public static final String cidade = "cidade";
+public static final String estado = "estado";
+
+sharedpreferences = getSharedPreferences(mypreference,
+                Context.MODE_PRIVATE);
+
+String mCidade = "Brasília";
+Stirng mEstado = "DF";
+
+
+// Salvar os dados
+ SharedPreferences.Editor dados = sharedpreferences.edit();
+        dados.putString(cidade, mCidade);
+        dados.putString(estado, mEstado);
+        dados.commit();
