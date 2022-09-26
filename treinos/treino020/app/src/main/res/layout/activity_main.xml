@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    >
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Seu nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editNome"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Seu email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="300dp"
+        android:background="@color/teal_700"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Bloquear"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/checkEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="Bloquear"
+            android:textColor="@color/white" />
+
+        <ToggleButton
+            android:id="@+id/tgSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ToggleButton"
+            android:textOn="Não mostrar"
+            android:textOff="Mostrar senha" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editSenha"
+
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Sua senha"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSenha"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="Cadastrar" />
+
+
+</RelativeLayout>
