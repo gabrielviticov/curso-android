@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">treino026</string>
+    <string name="hint_cpf_rg">CPF/RG</string>
+    <string name="hint_nome_completo">Nome completo</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_email">Email</string>
+    <string name="text_mostrar_senha">Mostrar Senha</string>
+    <string name="text_limpar_campo">Limpar campos</string>
+    <string name="text_cadastrar_usuario">Cadastrar Usuário</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">treino025</string>
+    <string name="hint_rgm_cpf">RGM/CPF</string>
+    <string name="hint_senha">Senha</string>
+    <string name="text_mostrar_senha">Mostrar senha</string>
+    <string name="btn_entrar">Entrar</string>
+</resources>

@@ -4,15 +4,165 @@
     android:layout_height="match_parent"
     tools:context=".view.ModeloAzulFragment">
 
-    <TextView
+
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_marginTop="10sp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:text="Adicionar Cliente"
-        android:textColor="@color/colorPrimary"
-        />
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:backgroundTint="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vermelho"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editNomeCompleto"
+            android:background="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_seu_nome"
+            />
+
+        <EditText
+            android:id="@+id/editTelefone"
+            android:background="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            android:hint="@string/hint_seu_telefone"
+            />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:background="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_endereco_de_email"
+            />
+
+        <EditText
+            android:id="@+id/editCep"
+            android:background="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress"
+            android:hint="@string/hint_cep"
+            />
+
+        <EditText
+            android:id="@+id/editLogradouro"
+            android:background="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_logradouro"
+            />
+
+        <EditText
+            android:id="@+id/editNumeroResidencia"
+            android:background="@color/campos_formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_numeroResidencia"
+            />
+
+        <EditText
+            android:id="@+id/editBairro"
+            android:layout_width="match_parent"
+            android:background="@color/campos_formulario"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_bairro"
+            />
+
+        <EditText
+            android:id="@+id/editCidade"
+            android:layout_width="match_parent"
+            android:background="@color/campos_formulario"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_cidade"
+            />
+        <EditText
+            android:id="@+id/editEstado"
+            android:layout_width="match_parent"
+            android:background="@color/campos_formulario"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_estado"
+            />
+
+        <CheckBox
+            android:id="@+id/ck_termos_de_uso"
+            android:background="@color/campos_formulario"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/ck_termos_de_uso" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/btn_salvar" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/btn_cancelar" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
 
 </FrameLayout>

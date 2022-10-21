@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".view.LoginActivity" >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/azulzinho_clarinho"
+        >
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/editRGM"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/hint_rgm_cpf"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/editSenha"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_senha"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="numberPassword" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_gravity="left"
+            android:layout_marginLeft="57dp"
+            android:id="@+id/swMostrarSenha"
+            android:layout_marginTop="40dp"
+            android:textStyle="italic"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_mostrar_senha" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="120dp"
+            android:backgroundTint="@color/azul_claro_escuro"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:text="@string/btn_entrar" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

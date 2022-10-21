@@ -8,8 +8,10 @@
     <string name="action_settings">Sair</string>
 
     <string name="modelo_fragment">Cliente VIP DEMO</string>
+    <string name="listar_clientes">Lista de Clientes</string>
 
     <!-- Opções do Menu Lateral Drawer -->
+    <string name="fragmento_listar_clientes">Listar Clientes</string>
     <string name="fragmento_preto">Fragmento Preto</string>
     <string name="fragmento_adicionar_cliente">Adicionar Cliente</string>
     <string name="titulo_preto">Preto</string>
@@ -20,5 +22,21 @@
 
     <!-- Opções do Menu Principal -->
     <string name="meu_perfil">Meu Perfil</string>
+
+    <!-- Declaração dos campos do fragmento "Adicionar Novo Cliente"-->
+    <string name="novoCliente">Adicionar Novo Cliente</string>
+    <string name="hint_seu_nome">Nome Completo</string>
+    <string name="hint_seu_telefone">Telefone</string>
+    <string name="hint_endereco_de_email">Endereço de Email</string>
+    <string name="hint_cep">Cep</string>
+    <string name="hint_logradouro">Logradouro</string>
+    <string name="hint_numeroResidencia">Número</string>
+    <string name="hint_bairro">Bairro</string>
+    <string name="hint_cidade">Cidade</string>
+    <string name="hint_estado">Estado</string>
+    <string name="ck_termos_de_uso">Termos de Uso</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="hint_pesquisar_nome">Pesquisar por nome</string>
 
 </resources>

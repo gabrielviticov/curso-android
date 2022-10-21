@@ -132,7 +132,12 @@ public class MainActivity extends AppCompatActivity
 
             fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloPretoFragment()).commit();
 
-        } else if (id == R.id.nav_vermelho) {
+        } else if(id == R.id.nav_listar_clientes){
+            fragmentManager.beginTransaction().replace(R.id.content_fragment, new ListarClientesFragment()).commit();
+        }
+
+
+        else if (id == R.id.nav_vermelho) {
 
             menu = navigationView.getMenu();
 
